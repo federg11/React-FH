@@ -15,7 +15,7 @@ const isActive = (path: string) => {
 
     return (
 
-        <NavigationMenu>
+        <NavigationMenu className="py-5">
             <NavigationMenuList>
                 {/*Home */}
                 <NavigationMenuItem>
