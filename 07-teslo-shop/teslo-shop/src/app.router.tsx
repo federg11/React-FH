@@ -60,25 +60,25 @@ export const appRouter = createBrowserRouter([
 
     //admin routes
     {
-        path: '/admin',
-        element: <AdminLayout />,
-        children: [
-            {
-                index: true,
-                element: <DashboardPage />
-            },
-            {
-                path: 'products',
-                element: <AdminProductsPage />
-            },
-            {
-                path: 'product/:id',
-                element: <AdminProductPage />
-            }
-        ]
-    },
-    {
-        path: '*',
-        element: <Navigate to='/' />
-    }
-])
+    path: '/admin',
+    element: <AdminLayout />,
+    children: [
+      {
+        index: true,
+        element: <DashboardPage />,
+      },
+      {
+        path: 'products',
+        element: <AdminProductsPage />,
+      },
+      {
+        path: 'products/:id',
+        element: <AdminProductPage />,
+      },
+    ],
+  },
+  {
+    path: '*',
+    element: <Navigate to="/" />,
+  },
+]);
